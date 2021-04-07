@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 
 #const
 source1=https://github.com/CocoaPods/Specs.git
-source2=https://github.com/enanso/EnanSpecs.git
+source2=https://github.com/CocoaPods/Specs.git
 commitText=""
 tag=""
 result=`find ./ -maxdepth 1 -type f -name "*.podspec"`
@@ -76,7 +76,7 @@ remoteVerifyLib(){
 #发布库
 publishLib(){
     echo -e "${GREEN}\n第六步：准备发布${tag}版本${NC}⏰⏰⏰"
-    if ! pod repo push EnanSpecs ${SpecName} --allow-warnings --sources="${source1},${source2}" --allow-warnings --use-libraries --skip-import-validation; then echo -e "${RED}发布${tag}版本失败${NC}🌧🌧🌧"; exit 1; fi
+    if ! pod repo push Specs ${SpecName} --allow-warnings --sources="${source1},${source2}" --allow-warnings --use-libraries --skip-import-validation; then echo -e "${RED}发布${tag}版本失败${NC}🌧🌧🌧"; exit 1; fi
     echo -e "${GREEN}发布${tag}版本成功${NC}🚀🚀🚀"
 }
 
