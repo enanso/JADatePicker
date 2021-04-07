@@ -1,0 +1,6 @@
+framework module Pods_JADatePicker_Tests {
+  umbrella header "Pods-JADatePicker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

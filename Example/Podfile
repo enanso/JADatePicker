@@ -1,13 +1,13 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '9.0'
-
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'http://git.qpaas.com/PaasPods/PaasSpecs.git'
 target 'JADatePicker_Example' do
   pod 'JADatePicker', :path => '../'
 
   target 'JADatePicker_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    
   end
 end

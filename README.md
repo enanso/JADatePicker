@@ -1,6 +1,6 @@
 # JADatePicker
 
-[![CI Status](https://img.shields.io/travis/漆家佳/JADatePicker.svg?style=flat)](https://travis-ci.org/漆家佳/JADatePicker)
+[![CI Status](https://img.shields.io/travis/enan/JADatePicker.svg?style=flat)](https://travis-ci.org/enan/JADatePicker)
 [![Version](https://img.shields.io/cocoapods/v/JADatePicker.svg?style=flat)](https://cocoapods.org/pods/JADatePicker)
 [![License](https://img.shields.io/cocoapods/l/JADatePicker.svg?style=flat)](https://cocoapods.org/pods/JADatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/JADatePicker.svg?style=flat)](https://cocoapods.org/pods/JADatePicker)
@@ -22,7 +22,7 @@ pod 'JADatePicker'
 
 ## Author
 
-漆家佳, lanmemory@163.com
+enan, lanmemory@163.com
 
 ## License
 

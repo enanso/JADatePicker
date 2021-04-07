@@ -1,0 +1,23 @@
+PODS:
+  - JADatePicker (0.1.0):
+    - SnapKit
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - JADatePicker (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JADatePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JADatePicker: 5f566fecea0c3cb10ca8e9dee93ddfed5557ba73
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 2ac6d3850c280bef080e622514dfa822ae3e4876
+
+COCOAPODS: 1.10.1

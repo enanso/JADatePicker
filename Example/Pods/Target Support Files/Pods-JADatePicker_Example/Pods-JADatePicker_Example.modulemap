@@ -1,0 +1,6 @@
+module Pods_JADatePicker_Example {
+  umbrella header "Pods-JADatePicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

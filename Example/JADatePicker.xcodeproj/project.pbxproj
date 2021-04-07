@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22887315ACE02C4212665DB9 /* Pods_JADatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E0C3B70C7AFA84396C25A2 /* Pods_JADatePicker_Tests.framework */; };
+		2FFDE3E86166BCCE25F20FC0 /* libPods-JADatePicker_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F548A5AAA80C2219122187F /* libPods-JADatePicker_Tests.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		DA8DA6F685AACB687FA0DC7A /* Pods_JADatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACF79D912E45D0AA75705CC /* Pods_JADatePicker_Example.framework */; };
+		6D36195E899CBB8BABBDC918 /* libPods-JADatePicker_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740DDF323370279587F10E0F /* libPods-JADatePicker_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ACF79D912E45D0AA75705CC /* Pods_JADatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JADatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F548A5AAA80C2219122187F /* libPods-JADatePicker_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JADatePicker_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JADatePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JADatePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +40,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6267B9C8136F713FB09F84E6 /* Pods-JADatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JADatePicker_Example.release.xcconfig"; path = "Target Support Files/Pods-JADatePicker_Example/Pods-JADatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		740DDF323370279587F10E0F /* libPods-JADatePicker_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JADatePicker_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		871FA1CFD15D6F8E1812B7EE /* Pods-JADatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JADatePicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-JADatePicker_Tests/Pods-JADatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		97D8ED6EEEF936CC27DB7FFA /* Pods-JADatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JADatePicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-JADatePicker_Example/Pods-JADatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C3110D308A7075CD76A35A26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D6E0C3B70C7AFA84396C25A2 /* Pods_JADatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JADatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E44811B0A7B64A9C647591F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C3110D308A7075CD76A35A26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E44811B0A7B64A9C647591F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EBE5F5FA363B2C9DF67BFE51 /* Pods-JADatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JADatePicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JADatePicker_Tests/Pods-JADatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F464B782E8A3DB2C2DA42540 /* JADatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JADatePicker.podspec; path = ../JADatePicker.podspec; sourceTree = "<group>"; };
+		F464B782E8A3DB2C2DA42540 /* JADatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JADatePicker.podspec; path = ../JADatePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8DA6F685AACB687FA0DC7A /* Pods_JADatePicker_Example.framework in Frameworks */,
+				6D36195E899CBB8BABBDC918 /* libPods-JADatePicker_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22887315ACE02C4212665DB9 /* Pods_JADatePicker_Tests.framework in Frameworks */,
+				2FFDE3E86166BCCE25F20FC0 /* libPods-JADatePicker_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,15 +77,14 @@
 				EBE5F5FA363B2C9DF67BFE51 /* Pods-JADatePicker_Tests.debug.xcconfig */,
 				871FA1CFD15D6F8E1812B7EE /* Pods-JADatePicker_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		35E4AD134399935DDC2689A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0ACF79D912E45D0AA75705CC /* Pods_JADatePicker_Example.framework */,
-				D6E0C3B70C7AFA84396C25A2 /* Pods_JADatePicker_Tests.framework */,
+				740DDF323370279587F10E0F /* libPods-JADatePicker_Example.a */,
+				1F548A5AAA80C2219122187F /* libPods-JADatePicker_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				6FCE5CA70ECFA8C782765DD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +188,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				839E4C23B9E8DF6A1F621EB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -305,42 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FCE5CA70ECFA8C782765DD6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JADatePicker_Example/Pods-JADatePicker_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JADatePicker/JADatePicker.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JADatePicker.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JADatePicker_Example/Pods-JADatePicker_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		839E4C23B9E8DF6A1F621EB6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JADatePicker_Tests/Pods-JADatePicker_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JADatePicker_Tests/Pods-JADatePicker_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

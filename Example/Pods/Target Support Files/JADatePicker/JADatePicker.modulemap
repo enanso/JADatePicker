@@ -1,0 +1,6 @@
+module JADatePicker {
+  umbrella header "JADatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  JADatePicker
 //
-//  Created by 漆家佳 on 04/07/2021.
-//  Copyright (c) 2021 漆家佳. All rights reserved.
+//  Created by enan on 04/07/2021.
+//  Copyright (c) 2021 enan. All rights reserved.
 //
 
 import UIKit
