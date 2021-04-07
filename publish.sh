@@ -43,7 +43,7 @@ pushAndTag(){
 #发布库
 publishLib(){
     echo -e "${GREEN}准备发布${tag}版本${NC}⏰⏰⏰"
-    if ! pod repo push Specs ${SpecName} --allow-warnings --sources="${source1}" --allow-warnings --use-libraries --skip-import-validation; then echo -e "${RED}发布${tag}版本失败${NC}🌧🌧🌧"; exit 1; fi
+    if ! pod repo push cocoapods ${SpecName} --allow-warnings --sources="${source1}" --allow-warnings --use-libraries --skip-import-validation; then echo -e "${RED}发布${tag}版本失败${NC}🌧🌧🌧"; exit 1; fi
     echo -e "${GREEN}发布${tag}版本成功${NC}🚀🚀🚀"
 }
 
