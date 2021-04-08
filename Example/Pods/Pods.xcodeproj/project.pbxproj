@@ -649,31 +649,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BF733564564EC4884456ACDFB4252A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 054A1D4417CA3511589B055BD2129FE2 /* JADatePicker.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JADatePicker;
-				PRODUCT_NAME = JADatePicker;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -787,6 +762,31 @@
 			};
 			name = Release;
 		};
+		6F8CA7214F1B3B0AC25B1E5654877EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49690DE374F38DA5CBD11C1BFFD4E33 /* JADatePicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JADatePicker;
+				PRODUCT_NAME = JADatePicker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		89411FE71DCC4F050216FF09BB66587A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4152D63245DB58BBA767ECF9F0935AD0 /* Pods-JADatePicker_Tests.debug.xcconfig */;
@@ -807,15 +807,16 @@
 			};
 			name = Debug;
 		};
-		AFCB4A7858EBF6DA8BABFC68070CB8A4 /* Debug */ = {
+		BFF282A9723EE50EAB525D815E92C8C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C49690DE374F38DA5CBD11C1BFFD4E33 /* JADatePicker.debug.xcconfig */;
+			baseConfigurationReference = 054A1D4417CA3511589B055BD2129FE2 /* JADatePicker.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -826,10 +827,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		C44577007BBC71EF23E660753DBF435A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -965,8 +967,8 @@
 		3B7787F8EACA928C166D8A62B9860B0B /* Build configuration list for PBXNativeTarget "JADatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFCB4A7858EBF6DA8BABFC68070CB8A4 /* Debug */,
-				0BF733564564EC4884456ACDFB4252A4 /* Release */,
+				6F8CA7214F1B3B0AC25B1E5654877EB7 /* Debug */,
+				BFF282A9723EE50EAB525D815E92C8C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
