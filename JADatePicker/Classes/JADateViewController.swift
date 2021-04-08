@@ -22,10 +22,10 @@ public struct DateFormat {
         self.value = value
     }
 }
-class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+public class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //代理
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         switch self.format {
         case DateFormat.standard.value:do{
             addLabel(nameArr: ["年","月","日","时","分"])
@@ -53,7 +53,7 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         return 0
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         let arr = numberOfRowsInComponent()
         return arr[component] as! Int
     }
@@ -86,11 +86,11 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
         return []
     }
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat{
+    public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat{
         return 40
     }
 
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         var title = ""
         switch self.format {
@@ -142,12 +142,13 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
         }
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.bold)
         label.textAlignment = NSTextAlignment.center
         label.text = title
         return label
     }
 
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         switch self.format {
         case DateFormat.standard.value:do{
             if 0 == component{
@@ -202,16 +203,16 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
     }
     //定义
-    typealias block = (String,Date)->Void
+    public typealias block = (String,Date)->Void
     //声明
-    var callBackBlock:block?
+    public var callBackBlock:block?
 
     //固定常量
     private let left:CGFloat = 15.0
     //当前时间
     private var currentDate = Date()
     //时间字符串
-    var current_time:String = ""
+    public var current_time:String = ""
     
     //年
     private lazy var yearArray:NSMutableArray = {
@@ -258,7 +259,7 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     private var minuteIndex:NSInteger = 0
     
     //时间格式
-    var format: String = DateFormat.default.value
+    public var format: String = DateFormat.default.value
 
     //分析时间格式
     private func analyseFormat(format:String){
@@ -310,7 +311,7 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             self.format = DateFormat.hourMinute.value
         }
     }
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         addKVC()
@@ -319,13 +320,12 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         configDefault()
     }
 
-    open func showDatePicker(viewController:UIViewController){
+    public func showDatePicker(viewController:UIViewController){
         viewController.definesPresentationContext = true
         self.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
         viewController.present(self, animated: false, completion: nil)
     }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: false, completion: nil)
     }
     private func createSubView(){
@@ -493,7 +493,7 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             label.text = (item as! String)
             label.isUserInteractionEnabled = true
             label.textAlignment = NSTextAlignment.center
-            label.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
+            label.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.bold)
             
             var space:CGFloat = 12.0
             if item as! String == "年" {
@@ -623,7 +623,7 @@ class JADateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.addObserver(self, forKeyPath: "monthIndex", options: [.old,.new], context: nil)
     }
     //监听变化
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "yearIndex" || keyPath == "monthIndex"{
             
             let days = self.days(year_num: self.yearArray[yearIndex], month_num: self.monthArray[monthIndex])

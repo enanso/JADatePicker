@@ -26,14 +26,14 @@ class ViewController: UIViewController {
     }
     /*按钮点击实现方法*/
     @objc  private func clickBtn(button:UIButton){
-//        let vc:JADateViewController = JADateViewController()
-//        vc.title = "开始时间"
-//        vc.format = DateFormat.default.value
-//        vc.current_time = "2021-04-27 09:57"
-//        vc.callBackBlock  = {(time:String, date:Date) -> Void in
-//            print("==最终时间=="+time)
-//        }
-//        vc.showDatePicker(viewController: self.navigationController!)
+        let vc:JADateViewController = JADateViewController()
+        vc.title = "开始时间"
+        vc.format = DateFormat.default.value
+        vc.current_time = "2021-04-27 09:57"
+        vc.callBackBlock  = {(time:String, date:Date) -> Void in
+            print("==最终时间=="+time)
+        }
+        vc.showDatePicker(viewController: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

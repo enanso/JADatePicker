@@ -715,6 +715,31 @@
 			};
 			name = Debug;
 		};
+		27A2B03FA785CE2C6604CEC1E52B1598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49690DE374F38DA5CBD11C1BFFD4E33 /* JADatePicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JADatePicker;
+				PRODUCT_NAME = JADatePicker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		43DB5E6471CD0644DE17F28A3D6C3B1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59F16AEA827CE98BFDFBE16BB2527507 /* SnapKit.release.xcconfig */;
@@ -762,31 +787,6 @@
 			};
 			name = Release;
 		};
-		6F8CA7214F1B3B0AC25B1E5654877EB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C49690DE374F38DA5CBD11C1BFFD4E33 /* JADatePicker.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JADatePicker;
-				PRODUCT_NAME = JADatePicker;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		89411FE71DCC4F050216FF09BB66587A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4152D63245DB58BBA767ECF9F0935AD0 /* Pods-JADatePicker_Tests.debug.xcconfig */;
@@ -806,32 +806,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		BFF282A9723EE50EAB525D815E92C8C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 054A1D4417CA3511589B055BD2129FE2 /* JADatePicker.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JADatePicker;
-				PRODUCT_NAME = JADatePicker;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		C44577007BBC71EF23E660753DBF435A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -961,14 +935,40 @@
 			};
 			name = Debug;
 		};
+		EEAB3123C258494FF1C0FEF01DEA01A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054A1D4417CA3511589B055BD2129FE2 /* JADatePicker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JADatePicker/JADatePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/JADatePicker/JADatePicker.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JADatePicker;
+				PRODUCT_NAME = JADatePicker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		3B7787F8EACA928C166D8A62B9860B0B /* Build configuration list for PBXNativeTarget "JADatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F8CA7214F1B3B0AC25B1E5654877EB7 /* Debug */,
-				BFF282A9723EE50EAB525D815E92C8C9 /* Release */,
+				27A2B03FA785CE2C6604CEC1E52B1598 /* Debug */,
+				EEAB3123C258494FF1C0FEF01DEA01A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
