@@ -1,6 +1,6 @@
 {
   "name": "JADatePicker",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "summary": "时间选择器",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/enanso/JADatePicker",
@@ -13,17 +13,17 @@
   },
   "source": {
     "git": "https://github.com/enanso/JADatePicker.git",
-    "tag": "0.1.1"
+    "tag": "0.1.3"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
-  "swift_versions": "5",
+  "swift_versions": "4",
   "source_files": "JADatePicker/Classes/**/*",
   "dependencies": {
     "SnapKit": [
 
     ]
   },
-  "swift_version": "5"
+  "swift_version": "4"
 }

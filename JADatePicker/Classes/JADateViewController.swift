@@ -216,7 +216,7 @@ public class JADateViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     //年
     private lazy var yearArray:NSMutableArray = {
-        return serial(from: 1970, to: 2100, polish:true)
+        return serial(from: 1900, to: 2100, polish:true)
     }()
     //月
     private lazy var monthArray:NSMutableArray = {
@@ -334,7 +334,7 @@ public class JADateViewController: UIViewController, UIPickerViewDelegate, UIPic
             make.left.equalTo(self.left);
             make.centerX.equalTo(self.view);
             make.bottom.equalTo(-20);
-            make.height.equalTo(240);
+            make.height.equalTo(220);
         }
     }
     ///  *** 懒加载视图 ***
@@ -591,7 +591,7 @@ public class JADateViewController: UIViewController, UIPickerViewDelegate, UIPic
         }
     }
     //日期 -> 字符串
-    private func date2String(_ date:Date, format:String) -> String {
+    public func date2String(_ date:Date, format:String) -> String {
         let formatter = DateFormatter()
         formatter.locale = Locale.init(identifier: "zh_CN")
         var dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -599,11 +599,11 @@ public class JADateViewController: UIViewController, UIPickerViewDelegate, UIPic
             dateFormat = format
         }
         formatter.dateFormat = dateFormat
-        let date = formatter.string(from: date)
-        return date
+        let time = formatter.string(from: date)
+        return time
     }
     //字符串 -> 日期
-    private func string2date(_ time:String, format:String) -> Date {
+    public func string2date(_ time:String, format:String) -> Date {
         
         let formatter:DateFormatter = DateFormatter()
         // 设置时区，不设置时默认的时区是系统时区（GMT+8）

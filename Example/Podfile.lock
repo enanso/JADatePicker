@@ -1,5 +1,5 @@
 PODS:
-  - JADatePicker (0.1.1):
+  - JADatePicker (0.1.3):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JADatePicker: f72773c28d5cdf8574dd9c9399009bbc0ff3cce0
+  JADatePicker: 8f4fdc25146c73e790bd4a3e72ba166ebcc5d6dd
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 2ac6d3850c280bef080e622514dfa822ae3e4876

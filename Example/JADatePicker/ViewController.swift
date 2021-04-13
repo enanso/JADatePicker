@@ -8,6 +8,7 @@
 
 import UIKit
 import JADatePicker
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -29,7 +30,8 @@ class ViewController: UIViewController {
         let vc:JADateViewController = JADateViewController()
         vc.title = "开始时间"
         vc.format = DateFormat.default.value
-        vc.current_time = "2021-04-27 09:57"
+        //vc.current_time = "2021-04-27 09:57"
+        vc.current_time = vc.date2String(NSDate(timeIntervalSinceNow: 0) as Date, format: vc.format)
         vc.callBackBlock  = {(time:String, date:Date) -> Void in
             print("==最终时间=="+time)
         }
